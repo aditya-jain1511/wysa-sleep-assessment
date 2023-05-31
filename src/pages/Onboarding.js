@@ -76,7 +76,6 @@ function Onboarding() {
 
     firestore.collection('sleepData').add({
       ...sleepData,
-      _id: auth.currentUser.uid,
       username: auth.currentUser.displayName,
       createdAt: firebasestore.FieldValue.serverTimestamp(),
       updatedAt: firebasestore.FieldValue.serverTimestamp()

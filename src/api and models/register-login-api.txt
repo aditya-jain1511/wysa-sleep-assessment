@@ -1,0 +1,44 @@
+POST -> /signup
+
+Host: {{baseurl}}
+Content-Type: application/json
+
+body:
+{
+    "email": "abc@def.in",
+    "password": "password",
+    "returnSecureToken":true
+}
+
+response:
+{
+    "status":"Registration Successful!",
+    "statusCode":"201",
+    "email": "abc@def.in",
+    "idToken":"APZUo0QTUcoqn9s4d6UQCFWfU27GuppiXAW3x0LWYaM45naaQ1hP6GADiVJNc7JkBN1xU-eSLZvOfNyhv1myrxtfZ0kIwJUWvDOBAlDuxqSADdcYOw99atYF_Ezwb3i_7dNDd9yUnSjFXH_vSvPwj6q1wFE9cX7VFVZ5WI_smO00f_st7Gcjww36Lg_cYEjzz1bIV5OoMP_qK-MlCS1c6043wCNAMsAP_w",
+    "expiresIn": "3600"
+}
+
+---------------------------------------------------------------------------------------------
+
+POST -> /login
+
+Host: {{baseurl}}
+Content-Type: application/json
+
+body:
+{
+    "email": "abc@def.in",
+    "password": "password",
+    "returnSecureToken":true
+}
+
+response:
+{
+    "status":"Login Successful!",
+    "statusCode":"200",
+    "email": "abc@def.in",
+    "displayName" : "AbcDef",
+    "idToken":"APZUo0QTUcoqn9s4d6UQCFWfU27GuppiXAW3x0LWYaM45naaQ1hP6GADiVJNc7JkBN1xU-eSLZvOfNyhv1myrxtfZ0kIwJUWvDOBAlDuxqSADdcYOw99atYF_Ezwb3i_7dNDd9yUnSjFXH_vSvPwj6q1wFE9cX7VFVZ5WI_smO00f_st7Gcjww36Lg_cYEjzz1bIV5OoMP_qK-MlCS1c6043wCNAMsAP_w",
+    "expiresIn": "3600"
+}

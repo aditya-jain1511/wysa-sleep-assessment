@@ -1,0 +1,84 @@
+POST -> /sleepData
+
+Host: {{baseurl}}
+Content-Type: application/json
+Authentication: Bearer APZUo0QTUcoqn9s4d6UQCFWfU27GuppiXAW3x0LWYaM45naaQ1hP6GADiVJNc7JkBN1xU-eSLZvOfNyhv1myrxtfZ0kIwJUWvDOBAlDuxqSADdcYOw99atYF_Ezwb3i_7dNDd9yUnSjFXH_vSvPwj6q1wFE9cX7VFVZ5WI_smO00f_st7Gcjww36Lg_cYEjzz1bIV5OoMP_qK-MlCS1c6043wCNAMsAP_w
+
+body:
+{
+    "username": "AbcDef"
+    "userId": "7ggf9Y7i7g78t76r9nb"
+    "change": ["I would go to sleep easily", "I would sleep thoughout the night"]
+    "sleepStruggle": {
+      "min": 2
+      "max": 8
+    },
+    "bedTime": "23:30"
+    "wakeTime": "06:00"
+    "sleepDuration": 5
+}
+
+response:
+{
+    "status":"Sleep Data added Successfully!",
+    "statusCode":"201",
+    "sleepData" : {
+      "_id": "6iTT7GhfU90Ouyt756i"
+      "username": "AbcDef"
+      "userId": "7ggf9Y7i7g78t76r9nb"
+      "change": ["I would go to sleep easily", "I would sleep thoughout the night"]
+      "sleepStruggle": {
+        "min": 2
+        "max": 8
+      },
+      "bedTime": "23:30"
+      "wakeTime": "06:00"
+      "sleepDuration": 5
+      "createdAt": "Wed May 31 2023 07:48:25 GMT+0530 (India Standard Time)",
+      "updatedAt": "Wed May 31 2023 07:48:25 GMT+0530 (India Standard Time)",
+    }
+}
+
+
+----------------------------------------------------------------------------------------
+
+PUT -> /sleepData -> given in case the value may needed to be updated in future
+
+Host: {{baseurl}}
+Content-Type: application/json
+Authentication: Bearer APZUo0QTUcoqn9s4d6UQCFWfU27GuppiXAW3x0LWYaM45naaQ1hP6GADiVJNc7JkBN1xU-eSLZvOfNyhv1myrxtfZ0kIwJUWvDOBAlDuxqSADdcYOw99atYF_Ezwb3i_7dNDd9yUnSjFXH_vSvPwj6q1wFE9cX7VFVZ5WI_smO00f_st7Gcjww36Lg_cYEjzz1bIV5OoMP_qK-MlCS1c6043wCNAMsAP_w
+
+body:
+{
+    "username": "AbcDef"
+    "userId": "7ggf9Y7i7g78t76r9nb"
+    "change": ["I would go to sleep easily"]
+    "sleepStruggle": {
+      "min": 2
+      "max": 8
+    },
+    "bedTime": "22:30"
+    "wakeTime": "06:00"
+    "sleepDuration": 8
+}
+
+response:
+{
+    "status":"Sleep Data updated Successfully!",
+    "statusCode":"200",
+    "sleepData" : {
+      "_id": "6iTT7GhfU90Ouyt756i"
+      "username": "AbcDef"
+      "userId": "7ggf9Y7i7g78t76r9nb"
+      "change": ["I would go to sleep easily", "I would sleep thoughout the night"]
+      "sleepStruggle": {
+        "min": 2
+        "max": 8
+      },
+      "bedTime": "23:30"
+      "wakeTime": "06:00"
+      "sleepDuration": 5
+      "createdAt": "Wed May 31 2023 07:48:25 GMT+0530 (India Standard Time)",
+      "updatedAt": "Mon Jun 05 2023 07:48:25 GMT+0530 (India Standard Time)",
+    }
+}
