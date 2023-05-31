@@ -2,6 +2,8 @@
 
 The Webpage is live at [Wysa-Sleep-Assessment](https://wysa-sleep-assessment.vercel.app/home)
 
+I have used [Firebase (backend as a service)] to setup both database and authentication
+
 # Challenge 1
 ## Estimated time - 1.5 hours
 ## Primary focus - API and data design, prototyping skills
