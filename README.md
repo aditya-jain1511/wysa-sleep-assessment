@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+## The Api and model folder contains a nosql(mongodb) model and http RestAPI mocks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Webpage is live at [Wysa-Sleep-Assessment](https://wysa-sleep-assessment.vercel.app/home)
 
-## Available Scripts
+# Challenge 1
+## Estimated time - 1.5 hours
+## Primary focus - API and data design, prototyping skills
 
-In the project directory, you can run:
+Download the [Wysa for Sleep app](https://play.google.com/store/apps/details?id=sleep.app.relax.calm&hl=en_IN&gl=US)
 
-### `npm start`
+Alternatively, you can also search for Wysa Sleep on the Google Play Store. Note that as of now, this app is not available for iOS, so you will have to either use the screenshots from below or borrow an Android phone for a short bit from a friend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+During the onboarding phase, the Sleep app takes you through a sleep assessment that looks like so.
+ 
+Please go through the onboarding screens for a clear understanding of the task.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Now implement the following:
 
-### `npm test`
+1.	Design detailed REST API interaction flows (that include the request body, parameters and responses), and database schema (sql or nosql) that will be used to implement a flow like this. 
+2.	Architect and implement a React project to implement the screen. 
+a.	Support only 1 or 2 of the screens in the flow
+b.	Ensure the switching b/w the screens is happening via a (mock) server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Note: 
+●	The api design is a REQUIRED task. Attempt the static code challenge on leetcode only after you’ve completed this. 
+●	Please read the task description carefully before attempting.
+Challenge 1 Bonus
+You can choose to attempt the following as a bonus challenge. This can be completed in a day and submitted as a follow up to your first submission.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.	Samples of how your storage is streamlined for analytics
+2.	Implementation of a basic server that has the following
+a.	A basic signup page - accepting a unique nickname + password pair should be enough
+b.	APIs for interacting with the screens (screens can be very basic)
+c.	Secure communication for protected endpoints
+(Feel free to hardcode or add pseudocode where needed eg. the score created in the last screen)
